@@ -22,7 +22,6 @@ DEPRECATED_ATTRIBUTE
 @protocol ConvertOnDemand
 @end
 
-DEPRECATED_ATTRIBUTE
 @protocol Index
 @end
 
@@ -124,7 +123,7 @@ DEPRECATED_ATTRIBUTE
 + (void)setGlobalKeyMapper:(JSONKeyMapper *)globalKeyMapper DEPRECATED_MSG_ATTRIBUTE("override +keyMapper in a base model class instead");
 + (NSString *)protocolForArrayProperty:(NSString *)propertyName DEPRECATED_MSG_ATTRIBUTE("use classForCollectionProperty:");
 - (void)mergeFromDictionary:(NSDictionary *)dict useKeyMapping:(BOOL)useKeyMapping DEPRECATED_MSG_ATTRIBUTE("use mergeFromDictionary:useKeyMapping:error:");
-- (NSString *)indexPropertyName DEPRECATED_ATTRIBUTE;
+- (NSString *)indexPropertyName;
 - (NSComparisonResult)compare:(id)object DEPRECATED_ATTRIBUTE;
 
 /** @name Creating and initializing models */

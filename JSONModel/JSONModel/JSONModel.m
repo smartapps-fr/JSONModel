@@ -1214,8 +1214,6 @@ static JSONKeyMapper* globalKeyMapper = nil;
 
 #pragma mark - custom comparison methods
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 -(NSString*)indexPropertyName
 {
     //custom getter for an associated object
@@ -1265,8 +1263,6 @@ static JSONKeyMapper* globalKeyMapper = nil;
 
     return [super hash];
 }
-
-#pragma GCC diagnostic pop
 
 #pragma mark - custom data validation
 -(BOOL)validate:(NSError**)error
